@@ -1,0 +1,222 @@
+---
+import Sitelogo from "./Sitelogo.astro";
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+---
+
+<nav>
+  <div class="navigation-container">
+    <div class="navigation" id="navmobile">
+      <a class="nav-logo" href="/">
+        <Sitelogo />
+      </a>
+      <div class="nav-item-container"></div>
+      <a
+        class={`nav-item ${currentPath === "design" && "active"}`}
+        href="/design"
+      >
+        Design
+        <div class="nav-item-active">
+          <svg
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="70px"
+            height="70px"
+          >
+            <path
+              d="M24.3274 43.5414C37.763 54.153 57.2572 51.8636 67.8688 38.428L19.214 0C8.60239 13.4357 10.8917 32.9298 24.3274 43.5414Z"
+              fill="#CFD1D2"></path>
+          </svg>
+        </div>
+      </a>
+      <a
+        class={`nav-item ${currentPath.includes("cv") && "active"}`}
+        href="/cv"
+      >
+        CV
+        <div class="nav-item-active">
+          <svg
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="70px"
+            height="70px"
+          >
+            <path
+              d="M24.3274 43.5414C37.763 54.153 57.2572 51.8636 67.8688 38.428L19.214 0C8.60239 13.4357 10.8917 32.9298 24.3274 43.5414Z"
+              fill="#CFD1D2"></path>
+          </svg>
+        </div>
+      </a>
+      <a
+        class={`nav-item ${currentPath === "contact" && "active"}`}
+        href="/contact"
+      >
+        Contact
+        <div class="nav-item-active">
+          <svg
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="70px"
+            height="70px"
+          >
+            <path
+              d="M24.3274 43.5414C37.763 54.153 57.2572 51.8636 67.8688 38.428L19.214 0C8.60239 13.4357 10.8917 32.9298 24.3274 43.5414Z"
+              fill="#CFD1D2"></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+    <button class="hamburger">
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        width="40px"
+        fill="currentColor"
+        height="40px"
+        viewBox="181.5 150.5 400 291"
+        enable-background="new 181.5 150.5 400 291"
+        xml:space="preserve"
+      >
+        <path
+          d="M226.06,167.895c11.589-1.471,28.151-0.406,41.462-0.406c67.112,0,136.361,0,204.058,0
+	c16.513,0,27.398,0,40.648,0c12.779,0,32.892-1.399,41.462,3.252c18.892,10.251,17.927,39.402-2.847,47.152
+	c-8.805,3.285-26.707,1.626-40.243,1.626c-84.297,0-165.099,0-249.583,0c-13.577,0-33.481,1.847-42.275-2.032
+	C194.972,207,200.215,171.175,226.06,167.895z"
+        ></path>
+        <path
+          d="M226.06,271.956c11.589-1.471,28.151-0.406,41.462-0.406c67.112,0,136.361,0,204.058,0
+	c16.513,0,27.398,0,40.648,0c12.779,0,32.892-1.399,41.462,3.252c18.891,10.251,17.929,39.401-2.847,47.152
+	c-8.805,3.285-26.707,1.626-40.243,1.626c-84.297,0-165.099,0-249.583,0c-13.577,0-33.481,1.847-42.275-2.032
+	C194.971,311.062,200.216,275.236,226.06,271.956z"
+        ></path>
+        <path
+          d="M226.06,376.018c11.589-1.472,28.151-0.405,41.462-0.405c67.113,0,136.359,0,204.058,0
+	c16.513,0,27.398,0,40.648,0c12.782,0,32.896-1.396,41.462,3.252c18.891,10.252,17.93,39.4-2.847,47.151
+	c-8.805,3.285-26.707,1.626-40.243,1.626c-84.297,0-165.099,0-249.583,0c-13.577,0-33.481,1.849-42.275-2.03
+	C194.971,415.123,200.216,379.298,226.06,376.018z"
+        ></path>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<style>
+  .hamburger {
+    padding-right: 30px;
+    display: none;
+    color: var(--dark-grey);
+    border: none;
+    cursor: pointer;
+    background: none;
+  }
+
+  .hamburger:hover {
+    color: var(--light-pink);
+  }
+
+  .navigation-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: white;
+    z-index: 999;
+  }
+
+  .navigation {
+    font-size: 14pt;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .nav-item {
+    display: flex;
+    position: relative;
+    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .nav-item:hover .nav-item-active {
+    opacity: 1;
+  }
+  .nav-item.active .nav-item-active {
+    opacity: 1;
+  }
+
+  .nav-item-active {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: ease-in 0.1s;
+  }
+
+  .nav-item:visited {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .nav-logo {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .nav-logo > svg {
+    height: 100%;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .hamburger {
+      display: block;
+    }
+
+    .nav-item {
+      display: none;
+    }
+
+    .navigation {
+      height: 90px;
+    }
+
+    .navigation-container {
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background: white;
+    }
+
+    .nav-logo {
+      height: 70px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+</style>
+<script>
+  function toggleNav() {
+    var mobileNav = document.querySelector(".mobile-menu");
+    if (mobileNav.style.display === "flex") {
+      mobileNav.style.display = "none";
+      document.body.style.overflow = "auto";
+    } else {
+      mobileNav.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
+  }
+
+  document.querySelector(".hamburger").addEventListener("click", toggleNav);
+</script>

@@ -1,0 +1,94 @@
+---
+import CVLayout from "../../layouts/CVLayout.astro";
+
+const events = [
+  {
+    title: "Brick & Mortar",
+    role: "Vendor – Pulp & Thread",
+    date: "Jun – Aug 2022",
+  },
+  {
+    title: "BUILT",
+    role: "Vendor – Pulp & Thread",
+    date: "Dec 2019, Dec 2020, Dec 2021",
+  },
+  {
+    title: "The Carrot Christmas Arts Bazaar",
+    role: "Vendor – Recollection",
+    date: "Nov 2019",
+  },
+  {
+    title: "BUILT",
+    role: "Vendor – Recollection",
+    date: "Dec 2017",
+  },
+  {
+    title: "The Miniatures Show, The Rogue Sparrow Fine Art Gallery",
+    role: "Recollection",
+    date: "Dec 2017",
+  },
+  {
+    title: "Celebration of Smalls",
+    role: "Vendor – Recollection",
+    date: "Nov 2017",
+  },
+  {
+    title: "Art Gallery of St. Albert",
+    role: "Vendor – Recollection",
+    date: "Mar 2017 – Sept 2018",
+  },
+  {
+    title: "Orange Conference",
+    role: "Workshop host and pop-up vendor – Recollection",
+    date: "Jan 2017",
+  },
+  {
+    title: "Pop Pop, SDA pop-up shop",
+    role: "Recollection",
+    date: "Dec 2014, Dec 2015",
+  },
+
+  {
+    title: "For the Love of Design – The Works Art & Design Festival",
+    role: "Group exhibition",
+    date: "Jun 2015",
+  },
+  {
+    title: "Design Latitudes – University of Alberta FAB Gallery",
+    role: "Group exhibition",
+    date: "May 2015",
+  },
+  {
+    title: "Running with Scissors – University of Alberta FAB Gallery",
+    role: "Group exhibition",
+    date: "Apr 2015",
+  },
+  {
+    title: "OFF THE WALL",
+    role: "Art & Design Auction",
+    date: "Nov 2014",
+  },
+  {
+    title: "A Portrait of the Artist – Stanley Milner Library",
+    role: "Group exhibition",
+    date: "Mar 2014",
+  },
+  {
+    title:
+      "Public Sculpture Installation: International Week 2014 - University of Alberta",
+    role: "Group exhibition",
+    date: "Jan 2014",
+  },
+];
+---
+
+<CVLayout>
+  <h1>Exhibitions & Events</h1>
+  {
+    events.map((event) => (
+      <p>
+        {`${event.title}${event.role && ", "}${event.role} (${event.date})`}
+      </p>
+    ))
+  }
+</CVLayout>

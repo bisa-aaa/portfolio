@@ -1,0 +1,15 @@
+---
+import "../styles/global.css";
+import Head from "../components/Head.astro";
+import Nav from "../components/Nav.astro";
+import NavMobile from "../components/Navmobile.astro";
+---
+
+<html>
+  <Head />
+  <body>
+    <slot />
+    <Nav />
+    <NavMobile />
+  </body>
+</html>

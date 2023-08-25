@@ -1,0 +1,195 @@
+---
+import "../styles/global.css";
+import Head from "../components/Head.astro";
+import Nav from "../components/Nav.astro";
+import NavMobile from "../components/Navmobile.astro";
+import BaseLayout from "./BaseLayout.astro";
+---
+
+<BaseLayout>
+  <div class="project-container">
+    <div class="gallery">
+      <img
+        class="feature-img"
+        src="https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+      />
+      <div class="thumbnail-container">
+        <img
+          class="thumbnail"
+          src="https://images.unsplash.com/photo-1477511801984-4ad318ed9846?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+        />
+        <img
+          class="thumbnail"
+          src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1491&q=80"
+        />
+        <img
+          class="thumbnail"
+          src="https://images.unsplash.com/photo-1457530378978-8bac673b8062?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+        />
+        <img
+          class="thumbnail"
+          src="https://images.unsplash.com/photo-1530075568197-cbf64cf2cb64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+        />
+        <img
+          class="thumbnail"
+          src="https://images.unsplash.com/photo-1477554193778-9562c28588c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+        />
+        <img
+          class="thumbnail"
+          src="https://images.unsplash.com/photo-1530049478161-0780526964f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+        />
+      </div>
+    </div>
+    <div class="project-text">
+      <h1 class="project-title">Project Title Goes Here</h1>
+      <p class="project-description">
+        Bonbon donut gingerbread halvah topping. I love pie candy brownie
+        liquorice caramels biscuit dragée. Sweet roll I love gummies bonbon
+        donut marshmallow sesame snaps lemon drops. Pie pastry wafer tootsie
+        roll danish jujubes. Dragée icing ice cream cupcake sweet roll cotton
+        candy marzipan oat cake. Caramels carrot cake icing chocolate bar pie
+        caramels tootsie roll carrot cake. Tootsie roll caramels I love bonbon
+        ice cream marshmallow muffin croissant candy. Muffin gummies gummi bears
+        I love sugar plum bear claw. Bear claw bonbon I love croissant cake
+        lollipop.
+      </p>
+      <p class="project-description">
+        I love sweet cupcake brownie I love cotton candy. Dragée sesame snaps
+        jelly beans I love chocolate bar candy chocolate bar jelly-o. Icing
+        bonbon pudding muffin candy candy. Bonbon cotton candy jelly-o wafer
+        cheesecake I love wafer cake. Candy canes chupa chups danish pastry I
+        love toffee. Shortbread cotton candy bonbon I love I love halvah powder
+        dessert. Bear claw shortbread fruitcake lollipop lollipop toffee jujubes
+        chupa chups. Dragée cupcake croissant jelly-o cookie jelly gummies
+        shortbread. Toffee topping sesame snaps shortbread dragée I love sesame
+        snaps tart tiramisu.
+      </p>
+      <p class="project-description">
+        Pudding liquorice I love marshmallow chocolate sweet cookie lollipop.
+        Sesame snaps marshmallow halvah candy canes sesame snaps lemon drops
+        cheesecake. Chupa chups I love caramels fruitcake marzipan. Sweet roll
+        chocolate I love apple pie sweet roll. Gummi bears sweet tiramisu I love
+        cupcake fruitcake fruitcake. Cupcake bear claw bear claw I love cake
+        pudding. I love dragée pastry macaroon chocolate bar macaroon topping.
+      </p>
+      <p class="project-description">
+        Pudding liquorice I love marshmallow chocolate sweet cookie lollipop.
+        Sesame snaps marshmallow halvah candy canes sesame snaps lemon drops
+        cheesecake. Chupa chups I love caramels fruitcake marzipan. Sweet roll
+        chocolate I love apple pie sweet roll. Gummi bears sweet tiramisu I love
+        cupcake fruitcake fruitcake. Cupcake bear claw bear claw I love cake
+        pudding. I love dragée pastry macaroon chocolate bar macaroon topping.
+      </p>
+      <p class="project-description">
+        Pudding liquorice I love marshmallow chocolate sweet cookie lollipop.
+        Sesame snaps marshmallow halvah candy canes sesame snaps lemon drops
+        cheesecake. Chupa chups I love caramels fruitcake marzipan. Sweet roll
+        chocolate I love apple pie sweet roll. Gummi bears sweet tiramisu I love
+        cupcake fruitcake fruitcake. Cupcake bear claw bear claw I love cake
+        pudding. I love dragée pastry macaroon chocolate bar macaroon topping.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  /*Mobile*/
+
+  .project-container {
+    width: 100%;
+    align-items: center;
+    position: relative;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .gallery {
+    width: 100%;
+    padding: 15px;
+    top: 0px;
+    height: 100%;
+  }
+
+  .feature-img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .thumbnail-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .thumbnail {
+    height: auto;
+    max-width: 32%;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+
+  .project-text {
+    padding: 0px 25px 25px 25px;
+    align-self: flex-start;
+  }
+
+  .project-title {
+    font-size: 23px;
+  }
+
+  /*Tablet*/
+
+  @media only screen and (min-width: 1025px) {
+    .gallery {
+      width: calc(100vw - 25%);
+    }
+    .thumbnail-container {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .project-text {
+      width: calc(100vw - 25%);
+      overflow: auto;
+      height: 85vh;
+      padding-right: 30px;
+    }
+  }
+
+  /*Desktop*/
+
+  @media only screen and (min-width: 1300px) {
+    .project-container {
+      width: 100vw;
+      display: flex;
+      height: 85vh;
+      position: sticky;
+    }
+
+    .gallery {
+      width: 70%;
+      flex-direction: column;
+    }
+
+    .thumbnail-container {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+
+    .thumbnail {
+      max-width: 16%;
+    }
+    .project-text {
+      margin-top: 15px;
+      width: 30%;
+    }
+  }
+</style>

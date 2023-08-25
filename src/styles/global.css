@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth&display=swap");
+
+:root {
+  --main-pink: #bc243f;
+  --light-pink: #e26971;
+  --light-grey: #c9c9c9;
+  --dark-grey: #4b5156;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.project-title {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-size: 18pt;
+  color: var(--main-pink);
+  padding: 15px 0px 15px 0px;
+}
+
+h1 {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: #bc243f;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.2;
+  padding-bottom: 12px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}

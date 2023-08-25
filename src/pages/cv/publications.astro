@@ -1,0 +1,55 @@
+---
+import "../../styles/global.css";
+import CVLayout from "../../layouts/CVLayout.astro";
+
+const publications = [
+  {
+    title: "Annual Reports",
+    author: "Rural Municipalities of Alberta",
+    date: "2019 - 2022",
+  },
+  {
+    title: "Product Manuals and Catalogues",
+    author: "CCI Thermal Technolgies Inc. / Thermon Heating Systems Inc.",
+    date: "2015 - 2018",
+  },
+  {
+    title: "Screwballs",
+    author: "Catherine A. Mardon",
+    date: "Jan 2015",
+  },
+  {
+    title: "A Home at Last",
+    author: "Emily Rush, Jason Halbauer, Noah Hopchins",
+    date: "Jun 2014",
+  },
+  {
+    title: "The Works Art and Design Festival Guide",
+    author: "",
+    date: "Jun 2014",
+  },
+  {
+    title: "Alberta Anglican Politicians",
+    author: "Ernest G, Mardon and Austin A. Mardon",
+    date: "2013",
+  },
+  {
+    title: "Designed by Providence",
+    author: "Austin A. Mardon",
+    date: "2012",
+  },
+];
+---
+
+<CVLayout>
+  <h1>Publications</h1>
+  {
+    publications.map((publication) => (
+      <p>
+        {`${publication.title}${publication.author && ", "}${
+          publication.author
+        } (${publication.date})`}
+      </p>
+    ))
+  }
+</CVLayout>

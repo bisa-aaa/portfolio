@@ -1,0 +1,109 @@
+---
+const { pictures } = Astro.props;
+---
+
+<div class="gallery">
+  <div class="feature-img-container">
+    <img class="feature-img" src={pictures[0]} />
+  </div>
+  <div class="thumbnail-container">
+    {pictures.map((pic) => <img class="thumbnail" src={pic} />)}
+  </div>
+</div>
+
+<script>
+  const featuredImg = document.querySelector("img.feature-img");
+  const thumbnails = document.querySelectorAll("img.thumbnail");
+
+  thumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener("click", () => {
+      featuredImg.src = thumbnail.src;
+    });
+  });
+</script>
+
+<style>
+  .thumbnail-container > img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .gallery {
+    width: 100%;
+    padding: 15px;
+    top: 0px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .feature-img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .feature-img-container {
+    margin-bottom: 20px;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .thumbnail-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+  }
+
+  .thumbnail {
+    height: auto;
+    max-width: 32%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .thumbnail:hover {
+    filter: saturate(0);
+    transition: 0.7s ease;
+  }
+
+  /*Tablet*/
+
+  @media only screen and (min-width: 1025px) {
+    .gallery {
+      width: calc(100vw - 25%);
+    }
+    .thumbnail-container {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  /*Desktop*/
+
+  @media only screen and (min-width: 1300px) {
+    .gallery {
+      width: 70%;
+      flex-direction: column;
+      display: flex;
+    }
+
+    .thumbnail-container {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+
+    .thumbnail {
+      max-width: 16%;
+    }
+  }
+
+  @media only screen and (min-width: 1650px) {
+    .feature-img {
+      height: 650px;
+    }
+    .feature-img-container {
+      flex: 0 1 auto;
+    }
+  }
+</style>

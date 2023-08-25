@@ -1,0 +1,68 @@
+---
+import "../styles/global.css";
+import BaseLayout from "./BaseLayout.astro";
+import CVsubmenu from "../components/CVsubmenu.astro";
+---
+
+<BaseLayout>
+  <div class="cv-view-container container">
+    <div class="cv-view">
+      <div class="cv-content">
+        <slot />
+      </div>
+      <div class="sub-container">
+        <CVsubmenu />
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style is:global>
+  .current-job {
+    background: var(--light-pink);
+    width: 10px;
+    height: 10px;
+    border-radius: 9999px;
+    margin-left: 10px;
+    display: inline-block;
+  }
+  .cv-view-container {
+    margin-bottom: 75px;
+    margin-top: 75px;
+  }
+  .cv-view {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+  .cv-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    order: 2;
+  }
+
+  .cv-content p {
+    margin-top: 0px;
+  }
+
+  .sub-container {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .cv-view {
+      flex-direction: row;
+    }
+
+    .cv-content {
+      width: 70%;
+      order: 0;
+    }
+
+    .sub-container {
+      width: auto;
+    }
+  }
+</style>

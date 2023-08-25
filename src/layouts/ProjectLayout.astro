@@ -1,0 +1,85 @@
+---
+import "../styles/global.css";
+import Gallery from "../components/Gallery.astro";
+import BaseLayout from "./BaseLayout.astro";
+import Backtodesign from "../components/Backtodesign.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout>
+  <div class="project-container">
+    <Gallery pictures={frontmatter.gallery} />
+    <div class="project-text">
+      <h1 class="project-title">{frontmatter.title}</h1>
+      <slot />
+      <Backtodesign />
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  /*Mobile*/
+  a {
+    color: #bc243f;
+  }
+
+  .project-container {
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+    margin-bottom: 130px;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .project-text {
+    padding: 0px 25px 25px 25px;
+    align-self: flex-start;
+  }
+
+  .project-title {
+    font-size: 23px;
+  }
+
+  /*Tablet*/
+
+  @media only screen and (min-width: 1025px) {
+    .project-text {
+      width: calc(100vw - 25%);
+      overflow: auto;
+      height: 85vh;
+      padding-right: 30px;
+    }
+  }
+
+  /*Desktop*/
+
+  @media only screen and (min-width: 1300px) {
+    .project-container {
+      display: flex;
+      height: 85vh;
+      position: sticky;
+    }
+
+    .project-text {
+      margin-top: 15px;
+      width: 30%;
+    }
+  }
+
+  @media only screen and (min-width: 1650px) {
+    .project-container {
+      max-width: 1650px;
+    }
+  }
+
+  @media only screen and (min-width: 2560px) {
+    .project-container {
+      padding-top: 100px;
+    }
+  }
+</style>

@@ -1,0 +1,39 @@
+---
+import "../styles/global.css";
+import Head from "../components/Head.astro";
+import Nav from "../components/Nav.astro";
+import LearningEntry from "../components/LearningEntry.astro";
+import NavMobile from "../components/Navmobile.astro";
+---
+
+<!DOCTYPE html>
+<html>
+  <Head />
+
+  <body>
+    <div class="entries-view container">
+      <div class="entries-container">
+        <LearningEntry />
+        <LearningEntry title="Weenie Hut Jr" />
+        <LearningEntry title="Lex is the real weenie" />
+        <LearningEntry />
+        <LearningEntry />
+        <LearningEntry title="Weenie Hut Sr" />
+        <LearningEntry />
+        <LearningEntry />
+      </div>
+    </div>
+    <Nav />
+    <NavMobile />
+    <style>
+      .entries-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px 30px;
+      }
+      .entries-view {
+        margin-top: 25px;
+      }
+    </style>
+  </body>
+</html>

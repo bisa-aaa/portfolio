@@ -1,0 +1,104 @@
+---
+import "../styles/global.css";
+import Head from "../components/Head.astro";
+import Nav from "../components/Nav.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <div class="error404-view">
+    <svg
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      width="392px"
+      height="392px"
+      viewBox="0 0 392 392"
+      enable-background="new 0 0 392 392"
+      xml:space="preserve"
+    >
+      <polygon
+        fill="#E26971"
+        id="bounce"
+        points="119.63,356.128 192.043,370.936 187.189,188.682 80.493,278.168 13.428,334.413 "
+      ></polygon>
+      <path
+        fill="#99A4AA"
+        id="bounce"
+        d="M322.424,339.7c-37.293,23.678-86.719,12.645-110.398-24.647c-11.475-18.072-14.775-38.988-10.908-58.447
+              l102.338,10.838l36.381,57.299C334.897,330.402,329.088,335.468,322.424,339.7z"
+      ></path>
+      <circle fill="#BB263E" id="bounce" cx="357.479" cy="353.645" r="25.093"
+      ></circle>
+    </svg>
+    <h1>A 404, how mortifying!</h1>
+    <p class="error404-line">
+      Sorry, this page seems to be missing. The page you are looking for may
+      have been moved or deleted. Please return to the
+      <a href="/">home page</a>
+      or try the URL again.
+    </p>
+    <div class="show-plant-button">
+      <a
+        class="show-plant-text"
+        href="https://www.instagram.com/stories/highlights/18110018044320794/"
+        target="_blank">Whatever, show me your favourite plant.</a
+      >
+    </div>
+  </div>
+</BaseLayout>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+  is:inline
+></script>
+<script is:inline>
+  gsap.set("#bounce", { y: -500 });
+  gsap.to("#bounce", {
+    y: 0,
+    duration: 1.5,
+    ease: "bounce.out",
+    stagger: 0.3,
+  });
+</script>
+
+<style>
+  .error404-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 85vh;
+  }
+
+  .error404-line {
+    width: 480px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+  }
+
+  .error404-line a {
+    color: var(--main-pink);
+    text-decoration: none;
+  }
+
+  .error404-view a:hover {
+    color: var(--light-pink);
+  }
+
+  .show-plant-button button {
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    stroke: var(--main-pink);
+    text-decoration: none;
+  }
+
+  .show-plant-button:visited {
+    color: var(--light-pink);
+  }
+</style>

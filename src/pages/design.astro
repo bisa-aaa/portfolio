@@ -1,0 +1,198 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <div class="grid-container">
+    <!-- 5x5 grid items -->
+
+    <a class="grid-item item1" href="/design/uniquely-rural"
+      ><div class="thumbnail-text">Uniquely Rural</div><img
+        src="/assets/thumbnail-uniquely-rural.jpeg"
+      />
+    </a>
+    <a class="grid-item empty"><div class="thumbnail-text">4</div></a>
+    <a class="grid-item empty">5</a>
+    <a class="grid-item empty">6</a>
+    <a class="grid-item empty">7</a>
+    <a class="grid-item item8" href="/design/cci-thermal"
+      ><img src="/assets/thumbnail-cci-thermal.jpg" />
+      <div class="thumbnail-text">CCI Thermal Technologies Inc.</div>
+    </a>
+    <a class="grid-item item9" href="/design/annual-report"
+      ><img src="/assets/thumbnail-rma-annualreport.png" />
+      <div class="thumbnail-text">Annual Report</div>
+    </a>
+    <a class="grid-item item10" href="/design/conventions">
+      <img src="/assets/thumbnail-conventions.jpeg" />
+      <div class="thumbnail-text">Conventions</div>
+    </a>
+    <a class="grid-item item11" href="/design/we-are-x">
+      <img src="/assets/thumbnail-we-are-x.jpg" />
+      <div class="thumbnail-text">We Are X</div>
+    </a>
+    <a class="grid-item item12" href="/design/canoe"
+      ><img
+        src="https://images.unsplash.com/photo-1567566221756-5282476c4684?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+      />
+      <div class="thumbnail-text">Canoe Procurement Group of Canada</div>
+    </a>
+    <a class="grid-item item13" href="/design/plinko-board"
+      ><img src="/assets/thumbnail-plinko-board.png" />
+      <div class="thumbnail-text">Plinko Board</div>
+    </a>
+    <a class="grid-item empty">14</a>
+    <a class="grid-item item15" href="/design/cmef"
+      ><img src="/assets/thumbnail-cmef.jpg" />
+      <div class="thumbnail-text">CMEF</div>
+    </a>
+    <a class="grid-item empty"><div class="thumbnail-text"></div></a>
+    <a class="grid-item item16" href="/design/sano-ichiro"
+      ><div class="thumbnail-text">Sano Ichiro</div><img
+        src="/assets/thumbnail-sanoichiro.jpg"
+      />
+    </a>
+  </div>
+</BaseLayout>
+
+<style>
+  /*Mobile Phone min width 360px*/
+
+  .grid-container {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 130px;
+  }
+
+  .grid-item > img {
+    object-fit: cover;
+    height: 85px;
+    width: 100%;
+  }
+
+  a.grid-item {
+    position: relative;
+    display: block;
+  }
+
+  a.grid-item.empty {
+    display: none;
+  }
+
+  .thumbnail-text {
+    font-size: 20px;
+    color: #fff;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+  }
+
+  .grid-item:hover .thumbnail-text {
+    opacity: 1;
+    transition: 0.7s ease;
+  }
+
+  .grid-item:hover img {
+    filter: saturate(0);
+    transition: 0.7s ease;
+  }
+
+  /*Tablet*/
+
+  @media only screen and (min-width: 750px) {
+    .grid-container {
+      width: calc(100vw - 35%);
+      margin: 0 auto;
+      margin-bottom: 130px;
+    }
+
+    .grid-item > img {
+      height: 120px;
+    }
+  }
+
+  /*Desktop*/
+
+  @media only screen and (min-width: 1025px) {
+    .grid-container {
+      grid-template-columns: repeat(5, 205px);
+      grid-template-rows: repeat(5, 70px);
+      gap: 10px;
+      width: 1065px;
+      top: 50%;
+      transform: translateY(80%);
+    }
+
+    .grid-item {
+      background-color: #ccc;
+      position: relative;
+    }
+
+    .grid-item > img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    a.grid-item.empty {
+      opacity: 0;
+      display: block;
+    }
+    /* 75px 75px 225px 125px 75px*/
+
+    .item1 {
+      grid-column: 3;
+      grid-row: 1 / 2;
+    }
+
+    .item8 {
+      grid-column: 2;
+      grid-row: 3 / 5;
+    }
+
+    .item9 {
+      grid-column: 3;
+      grid-row: 2 / 5;
+    }
+
+    .item10 {
+      grid-column: 1;
+      grid-row: 2 / 4;
+    }
+
+    .item11 {
+      grid-column: 1;
+      grid-row: 4 / 4;
+    }
+
+    .item12 {
+      grid-column: 5;
+      grid-row: 4 / 4;
+    }
+
+    .item13 {
+      grid-column: 4;
+      grid-row: 3 / 5;
+    }
+
+    .item15 {
+      grid-column: 4;
+      grid-row: 2;
+    }
+
+    .item16 {
+      grid-column: 5;
+      grid-row: 1 / 4;
+    }
+  }
+</style>

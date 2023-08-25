@@ -1,0 +1,48 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+---
+
+<div class="mobile-menu">
+  <a class="mobile-item" href="/design">Design</a>
+  <a class="mobile-item" href="/cv">CV</a>
+  <a class="mobile-item" href="/contact">Contact</a>
+</div>
+
+<style>
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 122px);
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+
+  .mobile-item {
+    padding: 15px;
+    font-family: Amaranth;
+    font-size: 22px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .mobile-menu {
+      display: none !important;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .mobile-menu {
+      height: calc(100vh - 90px);
+    }
+    .mobile-item:hover {
+      color: var(--main-pink);
+    }
+    .mobile-item:visited {
+      color: #000;
+    }
+  }
+</style>

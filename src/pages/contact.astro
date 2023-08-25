@@ -1,0 +1,106 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContactGraphic from "../components/ContactGraphic.astro";
+---
+
+<html>
+  <BaseLayout>
+    <div class="contact-view">
+      <div>
+        <ContactGraphic />
+      </div>
+      <h1>I love mail!</h1>
+      <p class="email-me">For any work inquiries, please email me at:</p>
+      <a href="mailto:contact@biancaho.com">contact@biancaho.com</a>
+      <p class="contact-line">
+        If you think you’d be interested in seeing my work in progress and
+        musings from day to day or from time to time, <br /> I can be found here:
+      </p>
+      <div>
+        <a href="https://www.instagram.com/biancaho.des/"
+          ><svg
+            class="bianca-social-icons"
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Instagram w/circle"
+            width="30"
+            height="30"
+            viewBox="0 0 19.2 19.2"
+          >
+            <path
+              d="M13.498 6.651a1.656 1.656 0 0 0-.95-.949 2.766 2.766 0 0 0-.928-.172c-.527-.024-.685-.03-2.02-.03s-1.493.006-2.02.03a2.766 2.766 0 0 0-.929.172 1.656 1.656 0 0 0-.949.95 2.766 2.766 0 0 0-.172.928c-.024.527-.03.685-.03 2.02s.006 1.493.03 2.02a2.766 2.766 0 0 0 .172.929 1.656 1.656 0 0 0 .95.949 2.766 2.766 0 0 0 .928.172c.527.024.685.03 2.02.03s1.493-.006 2.02-.03a2.766 2.766 0 0 0 .929-.172 1.656 1.656 0 0 0 .949-.95 2.766 2.766 0 0 0 .172-.928c.024-.527.03-.685.03-2.02s-.006-1.493-.03-2.02a2.766 2.766 0 0 0-.172-.929zM9.6 12.168A2.568 2.568 0 1 1 12.168 9.6 2.568 2.568 0 0 1 9.6 12.168zm2.669-4.637a.6.6 0 1 1 .6-.6.6.6 0 0 1-.6.6z"
+            ></path>
+            <circle cx="9.6" cy="9.6" r="1.667"></circle>
+            <path
+              d="M9.6 0a9.6 9.6 0 1 0 9.6 9.6A9.6 9.6 0 0 0 9.6 0zm4.97 11.662a3.67 3.67 0 0 1-.233 1.213 2.556 2.556 0 0 1-1.462 1.462 3.67 3.67 0 0 1-1.213.233c-.534.024-.704.03-2.062.03s-1.528-.006-2.062-.03a3.67 3.67 0 0 1-1.213-.233 2.556 2.556 0 0 1-1.462-1.462 3.67 3.67 0 0 1-.233-1.213c-.024-.534-.03-.704-.03-2.062s.006-1.528.03-2.062a3.67 3.67 0 0 1 .233-1.213 2.556 2.556 0 0 1 1.462-1.462 3.67 3.67 0 0 1 1.213-.233c.534-.024.704-.03 2.062-.03s1.528.006 2.062.03a3.67 3.67 0 0 1 1.213.233 2.556 2.556 0 0 1 1.462 1.462 3.67 3.67 0 0 1 .233 1.213c.024.534.03.704.03 2.062s-.006 1.528-.03 2.062z"
+            ></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/bianca-ho-19b463b9/"
+          ><svg
+            class="bianca-social-icons"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zM7.65 13.979H5.706V7.723H7.65v6.256zm-.984-7.024c-.614 0-1.011-.435-1.011-.973 0-.549.409-.971 1.036-.971s1.011.422 1.023.971c0 .538-.396.973-1.048.973zm8.084 7.024h-1.944v-3.467c0-.807-.282-1.355-.985-1.355-.537 0-.856.371-.997.728-.052.127-.065.307-.065.486v3.607H8.814v-4.26c0-.781-.025-1.434-.051-1.996h1.689l.089.869h.039c.256-.408.883-1.01 1.932-1.01 1.279 0 2.238.857 2.238 2.699v3.699z"
+            >
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </BaseLayout>
+
+  <style>
+    .contact-view a {
+      color: var(--main-pink);
+      text-decoration: none;
+    }
+
+    .contact-view a:hover {
+      color: var(--light-pink);
+    }
+
+    .contact-view {
+      width: 100vw;
+      height: 85vh;
+      margin: 0;
+      font-size: 18px;
+      line-height: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .email-me {
+      margin-bottom: 5px;
+    }
+
+    .bianca-social-icons {
+      fill: var(--dark-grey);
+    }
+
+    .bianca-social-icons:hover {
+      fill: var(--light-pink);
+    }
+
+    .contact-line {
+      line-height: 1.4;
+      max-width: 340px;
+      text-align: center;
+    }
+
+    /* Desktop*/
+    @media only screen and (min-width: 1024px) {
+      .contact-line {
+        max-width: 475px;
+      }
+    }
+  </style>
+
+
+</html>

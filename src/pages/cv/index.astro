@@ -1,0 +1,71 @@
+---
+import CVsubmenu from "../../components/CVsubmenu.astro";
+import CVLayout from "../../layouts/CVLayout.astro";
+
+const experiences = [
+  {
+    title: "Visual Communications Designer",
+    location: "Rural Municipalities of Alberta",
+    duration: "Nov 2018 – Current",
+    current: true,
+  },
+  {
+    title: "Board Member",
+    location: "Edmonton Wayfinding Society",
+    duration: "Jul 2019 – Current",
+    current: true,
+  },
+  {
+    title: "Recollection, Bookbinding & Book Design Services",
+    location: "",
+    duration: "Dec 2015 – 2021",
+  },
+  {
+    title: "Marketing Coordinator – Sales Support & Publications",
+    location: "CCI Thermal Technologies Inc. / Thermon Heating Systems",
+    duration: "Jul 2015 – Nov 2018",
+  },
+  {
+    title: "Public Relations",
+    location: "KGK: East Asian Studies Undergraduate Students Association",
+    duration: "Sept 2014 – May 2015",
+  },
+  {
+    title: "Catalogue Team Member",
+    location: "Design Grad Committee",
+    duration: "Sept 2014 – May 2015",
+  },
+  {
+    title: "Design Assistant",
+    location: "The Works Art & Design Festival",
+    duration: "Summer 2014",
+  },
+
+  {
+    title: "Volunteer Musician and Visual Artist, Artists on the Ward",
+    location: "University of Alberta Hospital",
+    duration: "2012 – 2014",
+  },
+  {
+    title: "Designer and Editor",
+    location: "Golden Meteorite Press",
+    duration: "2012 – 2015",
+  },
+];
+---
+
+<CVLayout>
+  <h1>Education</h1>
+  <p>Bachelor of Design in Visual Communication, University of Alberta</p>
+  <h1>Experience</h1>
+  {
+    experiences.map((experience) => (
+      <p>
+        {`${experience.title}${experience.location && ", "}${
+          experience.location
+        } (${experience.duration})`}
+        {experience.current && <span class="current-job" />}
+      </p>
+    ))
+  }
+</CVLayout>

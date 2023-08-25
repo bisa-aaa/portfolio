@@ -1,0 +1,28 @@
+---
+const { title = "Placeholder Title" } = Astro.props;
+---
+
+<div class="entry-container">
+  <div class="entry-thumbnail"></div>
+  <div class="entry-title">{title}</div>
+  <div class="entry-date">DD/MM/22</div>
+</div>
+
+<style>
+  .entry-date {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    margin-left: 7px;
+  }
+  .entry-title {
+    font-family: "Amaranth", sans-serif;
+    font-weight: 300;
+    font-size: 17pt;
+    margin: 7px;
+  }
+  .entry-thumbnail {
+    height: 150px;
+    width: 100%;
+    background: var(--light-grey);
+  }
+</style>
