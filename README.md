@@ -12,6 +12,9 @@ Images
 - fix landing page intro cut off.
 - consider alt text later
 - consider lazy load
+- design form for email contact
+- home page spacing - mobile
+- submerged image
 
 # Next Week
 
