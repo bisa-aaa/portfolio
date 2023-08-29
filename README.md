@@ -5,7 +5,6 @@ https://www.figma.com/file/8kw5x3p5PxGiy29dGDWpgA/portfolio-site?node-id=11%3A3&
 Images
 
 - organize images for:
-  - We are X?
 - - white text back button
 - find thumbnail for canoe
 - fix mobile menu (red text)
@@ -17,6 +16,3 @@ Images
 - submerged image
 
 # Next Week
-
-- get through some content and images (make all pages, if I can)
-- animate contact page graphic

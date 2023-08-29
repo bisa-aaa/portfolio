@@ -73,14 +73,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     justify-content: center;
     width: 100vw;
     height: 85vh;
-    padding-left: 25px;
-    padding-right: 25px;
   }
 
   .error404-line {
     width: 480px;
     line-height: 1.4;
     margin-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .error404-line a {
@@ -92,15 +92,21 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     color: var(--light-pink);
   }
 
-  .show-plant-button button {
-    padding: 10px;
-    border-style: solid;
-    border-width: 2px;
-    stroke: var(--main-pink);
+  .show-plant-button {
+    background: none;
+    border: 1px solid #bc243f;
+    text-align: center;
     text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #fff;
   }
 
-  .show-plant-button:visited {
-    color: var(--light-pink);
+  .show-plant-button a:visited {
+    color: #000;
+  }
+
+  .show-plant-button a:hover {
+    color: #bc243f;
   }
 </style>
