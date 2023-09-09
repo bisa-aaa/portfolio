@@ -16,4 +16,4 @@ With the launch of Canoe, I worked on various components such as the design of t
 
 A major component of the website involves a <a href="https://canoeprocurement.ca/programs/" target="_blank">program</a> and <a href="https://canoeprocurement.ca/suppliers/directory/" target="_blank">supplier</a> directory. Previously, the directory was printed annual and became out of date quickly due to changes in suppliers and addition of programs throughout the year. The directory also doubles as a resource for client relations managers during client visits.
 
-The rebrand and launch was a team effort of the Marketing and Communications team, including <a href="http://brandonlow.com/" target="_blank">Brandon Low</a>, at the RMA.
+The rebrand and launch was a team effort of the Marketing & Communications team, including <a href="http://brandonlow.com/" target="_blank">Brandon Low</a>, at the RMA.

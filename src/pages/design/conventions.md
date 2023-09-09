@@ -18,4 +18,4 @@ Uniquely Rural</a> campaign was also featured at the convention.
 
 During conventions, my responsibilities include photography and videoography coverage for the post-convention highlights and documentation.
 
-RMA conventions require extensive preparations that begin months in advance,clear communication with other departments, and working closely with the convention coordinator.
+RMA conventions require extensive preparations that begin months in advance, clear communication with other departments, and working with the convention coordinator.
