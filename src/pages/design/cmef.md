@@ -2,10 +2,10 @@
 layout: "../../layouts/ProjectLayout.astro"
 title: "CMEF: Give us a face. Give us a place."
 gallery:
-  - "/assets/cmef-churchill1.jpg"
-  - "/assets/cmef-churchill2.jpg"
-  - "/assets/cmef-fb-french.jpg"
-  - "/assets/cmef-banner.jpg"
+  - "/assets//cmef/cmef-churchill1.jpg"
+  - "/assets/cmef/cmef-churchill2.jpg"
+  - "/assets/cmef/cmef-fb-french.jpg"
+  - "/assets/cmef/cmef-banner.jpg"
 ---
 
 The Canadian Multicultural Education Foundation (CMEF) is a non-profit organization that promotes public awareness for multiculturalism and diversity.

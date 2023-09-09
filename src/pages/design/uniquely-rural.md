@@ -18,4 +18,4 @@ After the election, due to positive feedback, the Uniquely Rural campaign contin
 
 All of the videos are available on the <a href="https://www.youtube.com/watch?v=QPQZuP3ArX4&list=PLOwQD01wk7sBxRzpIZyuE3VpcllpzEKDh" target="_blank">Uniquely Rural playlist</a> on the RMA's YouTube channel.
 
-The campaign was a group effort that included contributions from the Advocacy team at the RMA, Hilary Darrah (Digital Communications Coordinator), and Brandon Low (Manager of Marketing Communications).
+The campaign was a group effort that included contributions from the Advocacy and Marketing & Communications team at the RMA, including including <a href="http://brandonlow.com/" target="_blank">Brandon Low</a>.
