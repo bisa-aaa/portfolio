@@ -15,5 +15,6 @@ Images
 - home page spacing - mobile
 - submerged image
 - submenu padding from the top (mobile)
+- gallery thumbnail alignment
 
 # Next Week
