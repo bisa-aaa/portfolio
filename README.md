@@ -14,5 +14,6 @@ Images
 - design form for email contact
 - home page spacing - mobile
 - submerged image
+- submenu padding from the top (mobile)
 
 # Next Week
