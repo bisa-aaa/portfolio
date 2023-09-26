@@ -4,6 +4,7 @@ title: "Uniquely Rural Campaign"
 gallery:
   - "/assets/uniquely-rural/uniquely-rural1.jpg"
   - "/assets/uniquely-rural/uniquely-rural2.jpg"
+  - "/assets/uniquely-rural/uniquely-rural3.jpeg"
 ---
 
 The Rural Municipality of Alberta (RMA) recognized the need to share its members' unique perspective and members' voices through the Uniquely Rural campaign that began in July 2022. The campaign amplified the voices of rural Alberta leading up to the the 2023 provincial election.
