@@ -6,15 +6,12 @@ Images
 
 - organize images for:
 - - white text back button
-- find thumbnail for canoe
 - fix mobile menu (red text)
 - fix landing page intro cut off.
-- consider alt text later
-- consider lazy load
-- design form for email contact
 - home page spacing - mobile
-- submerged image
-- submenu padding from the top (mobile)
 - gallery thumbnail alignment
+- apply view transition fade in/out
+- contact page: viewbox centering
+- 404 page: centering, text is cut off
 
 # Next Week
