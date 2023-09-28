@@ -3,11 +3,11 @@ layout: "../../layouts/ProjectLayout.astro"
 title: "Sano Ichiro"
 gallery:
   - "/assets/sano-ichiro/sano-ichiro1.jpg"
-  - "/assets/sano-ichiro/sano-ichiro2.jpg"
-  - "/assets/sano-ichiro/sano-ichiro3.jpg"
+  - "/assets/sano-ichiro/sano-ichiro2.JPG"
+  - "/assets/sano-ichiro/sano-ichiro3.JPG"
   - "/assets/sano-ichiro/sano-ichiro4.jpg"
-  - "/assets/sano-ichiro/sano-ichiro5.jpg"
-  - "/assets/sano-ichiro/sano-ichiro6.jpg"
+  - "/assets/sano-ichiro/sano-ichiro5.JPG"
+  - "/assets/sano-ichiro/sano-ichiro6.JPG"
 ---
 
 Sano Ichiro is a series of 18 mystery novels written by Laura Joh Rowland. The main character, Sano Ichiro, is a samurai and detective. This project explores book cover design, layout, and illustration.
