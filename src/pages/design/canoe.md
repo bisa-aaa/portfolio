@@ -2,7 +2,7 @@
 layout: "../../layouts/ProjectLayout.astro"
 title: "Canoe Procurement Group of Canada"
 gallery:
-  - "/assets/canoe/canoe-logovariations.png"
+  - "/assets/canoe/canoe-logovariations.jpg"
   - "/assets/canoe/canoe-website.png"
   - "/assets/canoe/canoe-businesscards.png"
   - "/assets/canoe/canoe-documents.png"

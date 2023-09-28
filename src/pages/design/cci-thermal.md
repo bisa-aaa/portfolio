@@ -4,7 +4,7 @@ title: "CCI Thermal Technologies Inc."
 gallery:
   - "/assets/cci-thermal/cci-thermal-brochure1.jpg"
   - "/assets/cci-thermal/cci-thermal-catalog1.jpg"
-  - "/assets/cci-thermal/cci-thermal-catalog3.jpg"
+  - "/assets/cci-thermal/cci-thermal-catalog3.JPG"
   - "/assets/cci-thermal/cci-thermal-manual1.jpg"
   - "/assets/cci-thermal/cci-thermal-manual3.jpg"
   - "/assets/cci-thermal/cci-thermal-booth-final-1920.jpg"
