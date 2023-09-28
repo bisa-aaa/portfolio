@@ -13,5 +13,6 @@ Images
 - apply view transition fade in/out
 - contact page: viewbox centering
 - 404 page: centering, text is cut off
+- project name and menu fonts
 
 # Next Week
