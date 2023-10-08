@@ -2,7 +2,7 @@
 layout: "../../layouts/ProjectLayout.astro"
 title: "Sano Ichiro"
 gallery:
-  - "/assets/sano-ichiro/sano-ichiro1.jpg"
+  - "/assets/sano-ichiro/sano-ichiro1.JPG"
   - "/assets/sano-ichiro/sano-ichiro2.JPG"
   - "/assets/sano-ichiro/sano-ichiro3.JPG"
   - "/assets/sano-ichiro/sano-ichiro4.jpg"
