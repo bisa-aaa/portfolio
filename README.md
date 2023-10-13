@@ -4,7 +4,7 @@ https://www.figma.com/file/8kw5x3p5PxGiy29dGDWpgA/portfolio-site?node-id=11%3A3&
 
 Images
 
-- home page spacing - mobile **DONE**
+- home page spacing - mobile **DONE** -- Not really
 - gallery thumbnail alignment **DONE**
 - apply view transition fade in/out
 - contact page: viewbox centering **DONE**
