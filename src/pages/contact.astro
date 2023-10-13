@@ -7,7 +7,7 @@ import ContactGraphic from "../components/ContactGraphic.astro";
 <html>
   <BaseLayout>
     <div class="contact-view">
-      <div>
+      <div class="graphic-wrapper">
         <ContactGraphic />
       </div>
       <h1>I love mail!</h1>
@@ -55,6 +55,9 @@ import ContactGraphic from "../components/ContactGraphic.astro";
   </BaseLayout>
 
   <style>
+    .graphic-wrapper {
+      overflow: hidden;
+    }
     .contact-view a {
       color: var(--main-pink);
       text-decoration: none;
