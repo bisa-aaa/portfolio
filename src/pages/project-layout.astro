@@ -103,36 +103,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     margin: 0 auto;
   }
 
-  img {
-    aspect-ratio: 16 / 9;
-  }
-
-  .gallery {
-    width: 100%;
-    padding: 15px;
-    top: 0px;
-    height: 100%;
-  }
-
-  .feature-img {
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-
-  .thumbnail-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .thumbnail {
-    height: auto;
-    max-width: 32%;
-    margin-bottom: 15px;
-    object-fit: cover;
-  }
-
 
   .project-text {
     padding: 0px 25px 25px 25px;
@@ -142,13 +112,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   /*Tablet*/
 
   @media only screen and (min-width: 1025px) {
-    .gallery {
-      width: calc(100vw - 25%);
-    }
-    .thumbnail-container {
-      width: 100%;
-      justify-content: space-between;
-    }
 
     .project-text {
       width: calc(100vw - 25%);
@@ -168,19 +131,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       position: sticky;
     }
 
-    .gallery {
-      width: 70%;
-      flex-direction: column;
-    }
-
-    .thumbnail-container {
-      flex-wrap: nowrap;
-      justify-content: space-between;
-    }
-
-    .thumbnail {
-      max-width: 16%;
-    }
     .project-text {
       margin-top: 15px;
       width: 30%;

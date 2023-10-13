@@ -4,10 +4,10 @@ https://www.figma.com/file/8kw5x3p5PxGiy29dGDWpgA/portfolio-site?node-id=11%3A3&
 
 Images
 
-- home page spacing - mobile
-- gallery thumbnail alignment
+- home page spacing - mobile **DONE**
+- gallery thumbnail alignment **DONE**
 - apply view transition fade in/out
-- contact page: viewbox centering
+- contact page: viewbox centering **DONE**
 - 404 page: centering, text is cut off
 - project name and menu fonts
 
