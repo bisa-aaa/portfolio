@@ -19,14 +19,6 @@ html {
   position: relative;
 }
 
-.project-title {
-  font-family: "Amaranth", sans-serif;
-  font-weight: 400;
-  font-size: 18pt;
-  color: var(--main-pink);
-  padding: 15px 0px 15px 0px;
-}
-
 h1 {
   font-family: "Amaranth", sans-serif;
   font-weight: 400;
