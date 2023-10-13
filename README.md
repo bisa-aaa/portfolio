@@ -4,8 +4,6 @@ https://www.figma.com/file/8kw5x3p5PxGiy29dGDWpgA/portfolio-site?node-id=11%3A3&
 
 Images
 
-- organize images for:
-- - white text back button
 - fix mobile menu (red text)
 - fix landing page intro cut off.
 - home page spacing - mobile
