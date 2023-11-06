@@ -4,62 +4,69 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <div class="grid-container">
-    <!-- 5x5 grid items -->
-
-    <a class="grid-item item1" href="/design/uniquely-rural"
-      ><div class="thumbnail-text">Uniquely Rural</div><img
-        src="/assets/thumbnail-uniquely-rural.jpeg"
-      />
-    </a>
-    <a class="grid-item empty"><div class="thumbnail-text">4</div></a>
-    <a class="grid-item empty">5</a>
-    <a class="grid-item empty">6</a>
-    <a class="grid-item empty">7</a>
-    <a class="grid-item item8" href="/design/cci-thermal"
-      ><img src="/assets/thumbnail-cci-thermal.JPG" />
-      <div class="thumbnail-text">CCI Thermal Technologies Inc.</div>
-    </a>
-    <a class="grid-item item9" href="/design/annual-report"
-      ><img src="/assets/thumbnail-rma-annualreport.png" />
-      <div class="thumbnail-text">Annual Report</div>
-    </a>
-    <a class="grid-item item10" href="/design/conventions">
-      <img src="/assets/thumbnail-conventions.jpeg" />
-      <div class="thumbnail-text">Conventions</div>
-    </a>
-    <a class="grid-item item11" href="/design/submerged">
-      <img src="/assets/thumbnail-submerged.jpg" />
-      <div class="thumbnail-text">Submerged</div>
-    </a>
-    <a class="grid-item empty"></a>
-    <a class="grid-item item13" href="/design/sano-ichiro"
-      ><img
-      src="/assets/thumbnail-sanoichiro.jpg"/>
-      <div class="thumbnail-text">Sano Ichiro</div>
-    </a>
-    <a class="grid-item empty">14</a>
-    <a class="grid-item item15" href="/design/cmef"
-      ><img src="/assets/thumbnail-cmef.jpg" />
-      <div class="thumbnail-text">CMEF</div>
-    </a>
-    <a class="grid-item item16" href="/design/canoe"
-    ><img src="/assets/thumbnail-canoe.jpg" />
-    <div class="thumbnail-text">Canoe Procurement Group of Canada</div>
-  </a>
-    <a class="grid-item empty"
-      >
-    </a>
-  </div>
+  <main>
+    <div class="grid-container">
+      <!-- 5x5 grid items -->
+  
+      <a class="grid-item item1" href="/design/uniquely-rural"
+        ><div class="thumbnail-text">Uniquely Rural</div><img
+          src="/assets/thumbnail-uniquely-rural.jpeg"
+        />
+      </a>
+      <a class="grid-item empty"><div class="thumbnail-text">4</div></a>
+      <a class="grid-item empty">5</a>
+      <a class="grid-item empty">6</a>
+      <a class="grid-item empty">7</a>
+      <a class="grid-item item8" href="/design/cci-thermal"
+        ><img src="/assets/thumbnail-cci-thermal.JPG" />
+        <div class="thumbnail-text">CCI Thermal Technologies Inc.</div>
+      </a>
+      <a class="grid-item item9" href="/design/annual-report"
+        ><img src="/assets/thumbnail-rma-annualreport.png" />
+        <div class="thumbnail-text">Annual Report</div>
+      </a>
+      <a class="grid-item item10" href="/design/conventions">
+        <img src="/assets/thumbnail-conventions.jpeg" />
+        <div class="thumbnail-text">Conventions</div>
+      </a>
+      <a class="grid-item item11" href="/design/submerged">
+        <img src="/assets/thumbnail-submerged.jpg" />
+        <div class="thumbnail-text">Submerged</div>
+      </a>
+      <a class="grid-item empty"></a>
+      <a class="grid-item item13" href="/design/sano-ichiro"
+        ><img
+        src="/assets/thumbnail-sanoichiro.jpg"/>
+        <div class="thumbnail-text">Sano Ichiro</div>
+      </a>
+      <a class="grid-item empty">14</a>
+      <a class="grid-item item15" href="/design/cmef"> 
+        <img src="/assets/thumbnail-cmef.jpg" />
+        <div class="thumbnail-text">CMEF</div>
+      </a>
+      <a class="grid-item item16" href="/design/canoe">
+        <img src="/assets/thumbnail-canoe.jpg" />
+        <div class="thumbnail-text">Canoe Procurement Group of Canada</div>
+      </a>
+      <a class="grid-item empty"></a>
+    </div>
+  </main>
 </BaseLayout>
 
 <style>
+  main {
+    min-height: 100vh;
+    padding-bottom: 90px;
+    padding-top: 30px;
+    display: grid;
+    place-items: center;
+  }
   /*Mobile Phone min width 360px*/
 
   .grid-container {
     display: grid;
+    width: 100%;
     gap: 8px;
-    margin-bottom: 130px;
   }
 
   .grid-item > img {
@@ -110,7 +117,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     .grid-container {
       width: calc(100vw - 35%);
       margin: 0 auto;
-      margin-bottom: 130px;
     }
 
     .grid-item > img {
@@ -120,14 +126,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   /*Desktop*/
 
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 1100px) {
     .grid-container {
       grid-template-columns: repeat(5, 205px);
       grid-template-rows: repeat(5, 70px);
       gap: 10px;
       width: 1065px;
-      top: 50%;
-      transform: translateY(80%);
+      margin: 0 30px;
     }
 
     .grid-item {
