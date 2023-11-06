@@ -32,24 +32,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <img src="/assets/thumbnail-submerged.jpg" />
       <div class="thumbnail-text">Submerged</div>
     </a>
-    <a class="grid-item item12" href="/design/canoe"
-      ><img src="/assets/thumbnail-canoe.jpg" />
-      <div class="thumbnail-text">Canoe Procurement Group of Canada</div>
-    </a>
-    <a class="grid-item item13" href="/design/plinko-board"
-      ><img src="/assets/thumbnail-plinko-board.png" />
-      <div class="thumbnail-text">Coming Soon</div>
+    <a class="grid-item empty"></a>
+    <a class="grid-item item13" href="/design/sano-ichiro"
+      ><img
+      src="/assets/thumbnail-sanoichiro.jpg"/>
+      <div class="thumbnail-text">Sano Ichiro</div>
     </a>
     <a class="grid-item empty">14</a>
     <a class="grid-item item15" href="/design/cmef"
       ><img src="/assets/thumbnail-cmef.jpg" />
       <div class="thumbnail-text">CMEF</div>
     </a>
-    <a class="grid-item empty"><div class="thumbnail-text"></div></a>
-    <a class="grid-item item16" href="/design/sano-ichiro"
-      ><div class="thumbnail-text">Sano Ichiro</div><img
-        src="/assets/thumbnail-sanoichiro.jpg"
-      />
+    <a class="grid-item item16" href="/design/canoe"
+    ><img src="/assets/thumbnail-canoe.jpg" />
+    <div class="thumbnail-text">Canoe Procurement Group of Canada</div>
+  </a>
+    <a class="grid-item empty"
+      >
     </a>
   </div>
 </BaseLayout>
@@ -175,7 +174,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     .item12 {
       grid-column: 5;
-      grid-row: 4 / 4;
+      grid-row: 2 / 4;
     }
 
     .item13 {
@@ -190,7 +189,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
     .item16 {
       grid-column: 5;
-      grid-row: 1 / 4;
+      grid-row: 3 / 5;
     }
   }
 </style>
