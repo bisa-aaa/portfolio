@@ -7,7 +7,7 @@ gallery:
   - "/assets/uniquely-rural/uniquely-rural3.jpeg"
 ---
 
-The Rural Municipality of Alberta (RMA) recognized the need to share its members' unique perspective and members' voices through the Uniquely Rural campaign that began in July 2022. The campaign amplified the voices of rural Alberta leading up to the the 2023 provincial election.
+The Rural Municipalities of Alberta (RMA) recognized the need to share its members' unique perspective and members' voices through the Uniquely Rural campaign that began in July 2022. The campaign amplified the voices of rural Alberta leading up to the the 2023 provincial election.
 
 A <a href="https://rmalberta.com/uniquely-rural/" target="_blank">platform page</a> hosted the videos and additional resources the RMA had available and it also leveraged the 2023 Spring Convention to maximize exposure and showcase the campaign to RMA members.
 

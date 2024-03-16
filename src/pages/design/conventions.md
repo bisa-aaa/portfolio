@@ -9,7 +9,7 @@ gallery:
   - "/assets/conventions/convention5.jpeg"
 ---
 
-The Rural Municipality of Alberta (RMA) holds two conventions each year: Spring and Fall at the Edmonton Convention Centre. The featured conventions are from 2023.
+The Rural Municipalities of Alberta (RMA) holds two conventions each year: Spring and Fall at the Edmonton Convention Centre. The featured conventions are from 2023.
 
 At each convention, members have the opportunity to network and share ideas with other attendees, participate in workshops and sessions, vote for resolutions, stay up-to-date at the AGM, and share insights and voice conerns with ministers during the ministeral forum. The fall convention also has a tradeshow in partnership with the Canoe Procurement Group of Canada.
 
