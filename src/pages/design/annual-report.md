@@ -4,7 +4,7 @@ title: "Annual Report"
 gallery:
   - "/assets/annual-report/annual-report1.jpeg"
   - "/assets/annual-report/annual-report2.jpeg"
-  - "/assets/annual-report/annual-report3.JPG"
+  - "/assets/annual-report/annual-report3.jpg"
   - "/assets/annual-report/annual-report4.jpeg"
   - "/assets/annual-report/annual-report5.jpeg"
   - "/assets/annual-report/annual-report6.jpeg"
